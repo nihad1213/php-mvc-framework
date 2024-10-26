@@ -1,0 +1,15 @@
+{
+    "name": "nihad/php-mvc-framework",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "nihad1213",
+            "email": "nihad.nemetli@gmail.com"
+        }
+    ],
+    "require": {} 
+}
