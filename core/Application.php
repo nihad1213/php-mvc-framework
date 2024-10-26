@@ -5,10 +5,12 @@ namespace app\core;
 
 class Application {
     
-    public Router $router; // Only Router can be assigned to $router
+    public static string $ROOT_DIR;
+    public Router $router;
     public Request $request;
 
-    public function __construct() {
+    public function __construct($rootPath) {
+        self::$ROOT_DIR = $rootPath;
         $this->request = new Request();
         $this->router = new Router($this->request);
     }   
